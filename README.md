@@ -1,8 +1,13 @@
-```markdown
+
 # Todo MCP Agent
 
-A learning project demonstrating MCP (Model Context Protocol) combined with
-an agentic reasoning loop, powered by Google Gemini.
+Todo MCP Agent is a learning project exploring how Model Context Protocol (MCP)
+and agentic reasoning work together. It pairs a simple MCP server (exposing
+to-do list and weather-lookup tools) with a Python client powered by Google
+Gemini, which reasons step-by-step and chains multiple tool calls together to
+complete multi-part requests — e.g. adding a task and conditionally adding a
+reminder based on live weather data. Built as a hands-on exploration of MCP,
+function calling, and agent loops.
 
 ## What this is
 - `server.py` — an MCP server exposing tools: add_todo, list_todos, remove_todo, get_weather
